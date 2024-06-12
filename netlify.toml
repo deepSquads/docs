@@ -1,0 +1,17 @@
+[build]
+  base = "/"
+  publish = "build" # Make sure this points to the correct output directory
+  command = "npm run build" # The command to build your site
+
+[[redirects]]
+  from = "/*"
+  to = "https://opensauced.pizza/docs/:splat"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/"
+  to = "https://opensauced.pizza/docs/"
+  status = 301
+  force = true
